@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login {
+    border-radius: 5px;
+    border: 2px solid black;
+    text-align: center;
+    width: 600px;
+    background-color: burlywood;
+    margin: auto;
+    padding: auto;
+
+
+}
+
+.quadro {
+    background-color: rgba(128, 69, 69, 0.568);
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid black;
+    width: 400px;
+    height: 45px;
+    display: block;
+    margin: 15px auto;
+    padding: 8px;
+    top: 100px;
+    
+}
+
+.quadro:hover {
+    background-color: black;
+    color: blue;
+}
+
+.cad {
+    background-color: aquamarine;
+    border: 1px solid black;
+    width: 150px;
+    text-align: center;
+    margin: auto;
+    display: block;
+    border-radius: 8px;
+
+}
+
+.cad:hover {
+    background-color: black;
+    color: blue;
+}
+
+p {
+    font-weight: bold;
+}
+
+input {
+    background-image: linear-gradient(to right, rgb(96, 109, 67), rgb(110, 141, 93));
+    border-radius: 8px;
+}
+
+input:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.nome {
+    width: 450px;
+    height: 22px;
+}
+
+.cpf {
+    width: 170px;
+    height: 22px;
+}
+
+.data {
+    width: 170px;
+    height: 22px;
+}
+
+.mail {
+    width: 400px;
+    height: 22px;
+}
+
+.botao {
+    background-color: rgb(139, 97, 97);
+    color: azure;
+    width: 110px;
+    position: relative;
+    margin: 25px;
+    padding: 8px;
+    font-weight: bolder;
+    border-radius: 8px;
+}
+
+.botao:hover {
+    background-color: black;
+    color: blue;
+}
