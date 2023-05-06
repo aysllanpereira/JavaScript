@@ -3,22 +3,23 @@
 body {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, #363ABF, #444AF2);
 }
 
 .login {
-    border-radius: 5px;
-    border: 2px solid black;
-    text-align: center;
-    width: 600px;
-    background-color: burlywood;
+    background-image: linear-gradient(to right, #44F51F, #81F76A);
+    width: 500px;
+    color: black;
     margin: auto;
     padding: auto;
-
+    border-radius: 15px;
+    max-width: 1200px;
+    min-width: 380px;
 
 }
 
 .quadro {
-    background-color: rgba(128, 69, 69, 0.568);
+    background-color: #20750F;
     text-align: center;
     border-radius: 8px;
     border: 1px solid black;
@@ -26,7 +27,7 @@ body {
     height: 45px;
     display: block;
     margin: 15px auto;
-    padding: 8px;
+    padding: 6px;
     top: 100px;
     
 }
@@ -37,7 +38,7 @@ body {
 }
 
 .cad {
-    background-color: aquamarine;
+    background-color: #20750F;
     border: 1px solid black;
     width: 150px;
     text-align: center;
@@ -57,7 +58,7 @@ p {
 }
 
 input {
-    background-image: linear-gradient(to right, rgb(96, 109, 67), rgb(110, 141, 93));
+    background-image: linear-gradient(to right, rgb(96, 109, 67), rgb(110, 141, 93), transparent);
     border-radius: 8px;
 }
 
@@ -88,13 +89,13 @@ input:hover {
 }
 
 .botao {
-    background-color: rgb(139, 97, 97);
-    color: azure;
+    background-color: #20750F;
+    color: black;
     width: 110px;
     position: relative;
     margin: 25px;
     padding: 8px;
-    font-weight: bolder;
+    font-weight: bold;
     border-radius: 8px;
 }
 
