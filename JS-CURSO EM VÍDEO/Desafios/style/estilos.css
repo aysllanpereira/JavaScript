@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    background-image: linear-gradient(to right,#49a09d,#94cfcd);
+}
+
+header.cabecalho {
+    display: block;
+    width: 550px;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    
+    
+}
+
+h1.calc {
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 8px;
+    padding: 8px;
+    box-shadow: 5px 5px 8px black;
+    
+}
+
+form {
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    border: 1px solid black;
+    width: 550px;
+    height: 520px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 8px black;
+}
+
