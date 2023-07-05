@@ -13,28 +13,29 @@
     </style>
 </head>
 <body>
-    <h1>Iniciando estudos com o DOM</h1>
+    <h1 id="in">Iniciando estudos com o DOM</h1>
 
-    <p>Aqui vai o resultado</p>
+    <p name="na">Aqui vai o resultado</p>
 
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
 
     <div class="msg">Clique em mim</div>
 
     <script>
-        
-        
-        var corpo = document.body
-        var p1 = document.getElementsByTagName("p")[1];
-        /*var d = document.getElementById("msg");
-        corpo.style.background = "black";
-        p1.style.color = "yellow";
-        d.style.background = "blue";
-        d.innerText = "Estou te esperando..."*/
 
+        var a = document.getElementsByName("na")[0];
+        a.innerText = "Manipulando por name"; /* manipulando o dom por name */
+
+        var b = document.querySelector("h1#in");
+        b.innerText = "Olá, mundo! Estou manipulando o dom por ID!"; /* manipulando o dom por seletor */
+
+        var c = document.getElementsByTagName("p")[1];
+        c.innerText = "Manipulando por tag"; /* manipulando por tag */ 
         
-        var d = document.querySelector("div.msg");
-        d.style.background = "blue";
+        var d = document.getElementsByClassName("div.msg");
+        d.style.background = "yellow";
+         /* manipulando o dom por class */ 
+
         
     </script>
 
