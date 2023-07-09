@@ -8,10 +8,6 @@
 </head>
 <body>
         
-        
-
-            
-
                 <header class="cabecalho">
     
                     <h1 class="calc">Calculo Final</h1>
@@ -21,18 +17,37 @@
                 <div>
                     <form action="cadastro.js" method="post" autocomplete="on">
     
-                        <label for="ifilia" class="filial">Filial</label> <br>
-                        <select name="estado" id="iest">
-                            <optgroup label="Estados">
-                                <option value="RO">Rondônia</option>
-                                <option value="MS">Mato Grosso do Sul</option>
-                            </optgroup>
-                        </select>
-    
+                        <input type="date" name="data" id="idata">
+                        <input type="number" id="dias">
+                        <input type="button" value="Somar" onclick="somar()">
+
+                        
+                        <p id="resultado">O resultado é: </p>
                     </form>
+
+                    
+
                 </div>
+                
+                
     
-            
+            <script>
+
+                function somar() {
+
+                    var data = document.getElementByName("data");
+                    var dias = document.querySelector("input#dias");
+
+                     var soma = data + dias;
+
+                    var res = document.getElementById("resultado");
+                    res.innerHTML = `A soma de ${data} e ${dias} é igual a: <strong>${soma}</strong>`;
+                }
+                    
+                
+                
+
+            </script>
 
 </body>
 </html>

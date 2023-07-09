@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando JS</title>
+</head>
+<body>
+    <h1>Hora de exercitar</h1>
+    <input type="button" value="Clique aqui" onclick="somar()">
+
+    <section id="res">
+        <p>Esse é o resultado</p>
+    </section>
+
+    <script>
+
+        function somar() {
+            var n1 = Number(prompt("Digite um número"));
+            var n2 = Number(prompt("Digite outro número"))
+            var soma = n1 + n2;
+
+            var res = document.querySelector("section#res");
+            res.innerHTML = `<p>A soma entre ${n1} e ${n2} é igual a: ${soma}</p>`;
+        }
+
+    </script>
+</body>
+</html>
