@@ -17,12 +17,14 @@
                 <div>
                     <form action="cadastro.js" method="post" autocomplete="on">
     
-                        <input type="date" name="data" id="idata">
+                        <input type="number" name="n1" id="in1">
                         <input type="number" id="dias">
                         <input type="button" value="Somar" onclick="somar()">
 
+                        <section id="res">
+                            <p>O resultado é: </p>
+                        </section>
                         
-                        <p id="resultado">O resultado é: </p>
                     </form>
 
                     
@@ -35,13 +37,13 @@
 
                 function somar() {
 
-                    var data = document.getElementByName("data");
-                    var dias = document.querySelector("input#dias");
+                    var n1 = document.getElementByName("n1")[0].value;
+                    var dias = document.querySelector("input#dias").value;
 
-                     var soma = data + dias;
+                     var soma = parseInt(n1) + parseInt(dias);
 
-                    var res = document.getElementById("resultado");
-                    res.innerHTML = `A soma de ${data} e ${dias} é igual a: <strong>${soma}</strong>`;
+                    var res = document.querySelector("section#res");
+                    res.innerHTML = `A soma de ${n1} e ${dias} é igual a: <strong>${soma}</strong>`;
                 }
                     
                 
