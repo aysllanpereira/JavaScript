@@ -5,7 +5,7 @@ body {
     font: normal 15pt Arial;
 }
 
-header {
+header > h1 {
     background-color: white;
     border-radius: 15px;
     padding: 5px;
@@ -14,12 +14,12 @@ header {
 
 }
 
-main {
+section {
     background-color: white;
     border-radius: 15px;
     padding: 8px;
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
     margin: auto;
     margin-top: 15px;
     box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.637);
@@ -27,11 +27,13 @@ main {
 
 div, h1 {
     text-align: center;
+    padding: 8px;
 }
 
-footer {
+footer > p {
     background-color: white;
     color: blue;
+    width: 600px;
     border-radius: 15px;
     padding: 2px;
     margin: auto;
