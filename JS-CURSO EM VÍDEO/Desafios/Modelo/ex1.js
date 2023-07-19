@@ -8,15 +8,15 @@ function carregar() {
 
     if(hora >= 0 && hora < 12) {
         /* bom dia */
-        img.src = "fotomanha.png";
+        img.src = "Arquivos/fotomanha.png";
         document.body.style.background = "#f0c9ba";
     } else if (hora >= 12 && hora <= 18) {
         /* boa tarde */
-        img.src = "fototarde.png";
+        img.src = "Arquivos/fototarde.png";
         document.body.style.background = "#bf7d75";
     } else {
         /* boa noite */
-        img.src = "fotonoite.png";
+        img.src = "Arquivos/fotonoite.png";
         document.body.style.background = "#191970";
     }
 
