@@ -35,12 +35,12 @@ function verificar() {
             
 
         } else if (fsex[1].checked) {
-            genero = "Mulher"
-        } 
+            genero = "Mulher";
+         
 
             if (idade >= 0 && idade < 10) {
                 // criança
-                img.setAttribute("src", "Imagens/criancamenina.pbg");
+                img.setAttribute("src", "Imagens/criancamenina.png");
             } else if (idade < 21) {
                 // jovem
                 img.setAttribute("src", "Imagens/adolmenina.png");
@@ -52,7 +52,7 @@ function verificar() {
                 // idoso
                 img.setAttribute("src", "Imagens/idosamulher.png");
             }
-
+        }
         res.innerHTML = `Detectamos um(a) ${genero} com ${idade} anos!`
         res.appendChild(img);
     } 
