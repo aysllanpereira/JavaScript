@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(155, 190, 179);
+
+}
+
+header {
+    background-color: beige;
+    width: 550px;
+    text-align: center;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 8px;
+}
+
+section {
+    background-color: beige;
+    text-align: center;
+    margin: auto;
+    height: 250px;
+    margin-top: 25px;
+    padding: 20px;
+    width: 450px;
+    border-radius: 8px;
+}
+
+p#fim {
+    margin-top: 10px;
+}
+
+p#passo {
+    margin-top: 10px;
+}
+
+p#bt {
+    margin-top: 20px;
+}
+
+div#res {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: beige;
+    width: 650px;
+    height: 25px;
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+    padding: 8px;
+    border-radius: 10px;
+}
