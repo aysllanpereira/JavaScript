@@ -8,14 +8,14 @@ function contar() {
     if (in1.value.length == 0 ||  fim.value.length == 0 || passo.value.length == 0) {
         res.innerHTML = "Impossível contar!"
     } else {
-        res.innerHTML = "Contando: <br>" ;
+        res.innerHTML = "Contando: <br>";
 
         var i = Number(in1.value);
         var f = Number(fim.value);
         var p = Number(passo.value);
 
         if (p <= 0) {
-            alert("Passo inválido! Considerando PASSO 1")
+            alert("Passo inválido! Considerando PASSO 1");
 
             p = 1;
         }
