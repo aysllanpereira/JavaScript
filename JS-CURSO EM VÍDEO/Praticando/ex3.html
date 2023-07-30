@@ -20,6 +20,10 @@
         <input type="number" name="n2" id="in2">
     </p>
 
+    <p>Média: 
+        <input type="number" name="n3" id="in3">
+    </p>
+
 
     <p id="res" onclick="verificar()">Média: 
         <input type="button" value="Resultado">
@@ -31,13 +35,14 @@
             var nome = document.getElementById("inome").value;
             var numero1 = document.getElementById("in1").value;
             var numero2 = document.getElementById("in2").value;
+            var media = document.getElementById("in3").value;
             var res = document.getElementById("res");
+            
 
             
             var valor1 = Number(numero1);
             var valor2 = Number(numero2);
             var div = (valor1 + valor2) / 2;
-            var media = 7;
 
             if (div >= media) {
                 res.innerHTML = `O aluno ${nome} ficou com a média: ${div}. Aprovado com sucesso!`;
