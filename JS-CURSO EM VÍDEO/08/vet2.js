@@ -4,12 +4,14 @@ function verificar() {
     let num = parseInt(document.getElementById("inum").value, 10)
     let res = document.getElementById("res");
 
-    if (num != valores.includes(num)) {
+    if (valores.includes(num)) {
         res.innerHTML = `O número digitado está entre os selecionados no programa!`
     } else {
         res.innerHTML = `Ops... Escolheu o número errado, mais sorte na próxima!`
     }
-}
+} 
+
+
 
 
 
