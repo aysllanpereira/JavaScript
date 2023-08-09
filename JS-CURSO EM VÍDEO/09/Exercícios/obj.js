@@ -1,11 +1,8 @@
-let amigo = {nome: "José", 
-sexo: "M", 
-peso: 85.4,
-engordar(p=0) {
-    console.log("Engordou!");
-    this.peso += p;
 
+
+let algo = {
+    nome: "Aysllan", sexo: "M", altura: "1.74",
+    peso: 80.00
 }
-}
-amigo.engordar(2);
-console.log(`${amigo.nome} pesa ${amigo.peso}kg`);
+
+console.log(`${algo.nome} tem ${algo.altura} de altura e pesa ${algo.peso}kg`);
