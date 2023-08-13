@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body, h1 {
+    background-color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 75px;
+}
+
+h1:hover {
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 350px;
+    margin: auto;
+    background-color: black;
+    color: blue;
+    cursor: pointer;
+}
+
+div {
+    text-align: center;
+    margin: auto;
+    margin-top: 25px;
+    
+}
+
+input#inome {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 180px;
+    
+
+}
+
+input#in1 {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+input#in2 {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 180px;
+}
+
+input#botao:hover {
+    background-color: black;
+    color: blue;
+    cursor: pointer;
+}
