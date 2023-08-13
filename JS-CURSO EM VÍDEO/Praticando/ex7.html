@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular dias e horas</title>
+</head>
+<body>
+    <header>
+        <h1>Calculando dias e horas</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>Dias: 
+                <input type="number" name="dias" id="idias">
+            </p>
+            <p>Horas:
+                <input type="number" name="horas" id="ihoras">
+            </p>
+        </div>
+
+        <div id="res">
+            <input type="button" value="Verificar" onclick="calcular()">
+        </div>
+
+        
+    </section>
+
+    <script>
+
+        function calcular() {
+
+            let dias = parseFloat(document.getElementById("idias").value);
+            let horas = parseFloat(document.getElementById("ihoras").value);
+            let total = (dias * 24) + horas;
+            let res = document.getElementById("res");
+
+            res.innerHTML = `Total de horas: ${total}`;
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total da Conta</title>
+</head>
+<body>
+    <header>
+        <h1>Valor total da Conta</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>Valor total da conta:
+                <input type="number" name="num" id="inum">
+            </p>
+
+            <p>Número de clientes:
+                <input type="number" name="cli" id="icli">
+            </p>
+
+        
+        </div>
+
+        <div id="res">
+            <input type="button" value="Verificar" onclick="verificar()">
+        </div>
+    </section>
+
+    <script>
+        function verificar() {
+            let conta = parseFloat(document.getElementById("inum").value);
+            let clientes = parseFloat(document.getElementById("icli").value);
+            let res = document.getElementById("res");
+            let divisao = conta / clientes; 
+
+            res.innerHTML = `A conta total deu: R$${conta}. O total de clientes é: ${clientes} e dividindo a conta total pela quantidade de clientes fica R$${divisao.toFixed(2)} para cada.`;
+        }
+    </script>
+</body>
+</html>
