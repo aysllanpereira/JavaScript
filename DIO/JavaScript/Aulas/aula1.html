@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular o gasto de uma Viagem</title>
+</head>
+<body>
+    <header>
+        <h1>Gasto Total</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>Preço do Combustível:
+                <input type="number" name="comb" id="icomb">
+            </p>
+
+            <p>Capacidade do tanque:
+                <input type="number" name="cap" id="icap">
+            </p>
+
+            <p>Gasto médio do combútivel do carro por km:
+                <input type="number" name="km" id="ikm">
+            </p>
+
+            <p>Distância em km da viagem:
+                <input type="number" name="dis" id="idis">
+            </p>
+        </div>
+
+        <div id="res">
+            <input type="button" value="Calcular" onclick="calcular()">
+        </div>
+    </section>
+
+    <script src="viagem.js"></script>
+</body>
+</html>
