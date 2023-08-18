@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média e Classificação</title>
+</head>
+<body>
+    <header>
+        <h1>Média e Classificação do Aluno</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>Nome:
+                <input type="text" name="nome" id="inome">
+            </p>
+
+            <p>Primeira Nota:
+                <input type="number" name="nota1" id="inota1">
+            </p>
+
+            <p>Segunda Nota:
+                <input type="number" name="nota2" id="inota2">
+            </p>
+
+            <p>Terceira Nota:
+                <input type="number" name="nota3" id="inota3">
+            </p>
+        </div>
+
+        <div id="res" onclick="calcular()">
+            <input type="button" value="Calcular">
+        </div>
+    </section>
+
+    <script src="media.js"></script>
+</body>
+</html>

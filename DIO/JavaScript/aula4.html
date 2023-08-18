@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando o IMC</title>
+</head>
+<body>
+    <header>
+        <h1>Calculando o IMC</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>Nome:
+                <input type="text" name="nome" id="inome">
+            </p>
+
+            <p>Altura:
+                <input type="number" name="altura" id="ialtura">
+            </p>
+
+            <p>Peso:
+                <input type="number" name="peso" id="ipeso">
+            </p>
+        </div>
+
+        <div id="res" onclick="resultado()">
+            <input type="button" value="Verificar">
+        </div>
+    </section>
+
+    <script src="imc.js"></script>
+</body>
+</html>
