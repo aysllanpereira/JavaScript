@@ -22,14 +22,20 @@
                 <input type="number" name="preco" id="ipreco">
             </p>
 
+            <p>Desconto:
+                <input type="number" name="desconto" id="idesconto">
+            </p>
+            
             <p>Forma de pagamento:
                 <input type="text" name="paga" id="ipaga">
             </p>
-        </div id="res" >
+        </div>
 
-        <div>
-
+        <div id="res" onclick = "calcular()">
+            <input type="button" value="Calcular">
         </div>
     </section>
+
+    <script src="preco.js"></script>
 </body>
 </html>
