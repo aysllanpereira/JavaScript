@@ -1,3 +1,9 @@
+function calcularImc (peso, altura) {
+
+    return peso / Math.pow(altura, 2);
+
+}
+
 function resultado() {
 
     let nomePessoa = document.getElementById("inome").value;
@@ -5,7 +11,7 @@ function resultado() {
     let peso = parseFloat(document.getElementById("ipeso").value);
     let res = document.getElementById("res");
 
-    let imc = peso / (altura * altura);
+    let imc = calcularImc(peso, altura);
 
     if (imc <= 18.5) {
 
