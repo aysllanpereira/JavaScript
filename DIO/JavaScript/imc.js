@@ -4,14 +4,7 @@ function calcularImc (peso, altura) {
 
 }
 
-function resultado() {
-
-    let nomePessoa = document.getElementById("inome").value;
-    let altura = parseFloat(document.getElementById("ialtura").value);
-    let peso = parseFloat(document.getElementById("ipeso").value);
-    let res = document.getElementById("res");
-
-    let imc = calcularImc(peso, altura);
+function classificarImc(imc, nomePessoa, res) {
 
     if (imc <= 18.5) {
 
@@ -34,5 +27,17 @@ function resultado() {
         res.innerHTML = `${nomePessoa}, seu IMC é ${imc.toFixed(2)}. Você está em estado de obesidade, procure ajuda médica!`;
 
     }
+}
+
+function resultado() {
+
+    let nomePessoa = document.getElementById("inome").value;
+    let altura = parseFloat(document.getElementById("ialtura").value);
+    let peso = parseFloat(document.getElementById("ipeso").value);
+    let res = document.getElementById("res");
+
+    let imc = calcularImc(peso, altura);
+
+    classificarImc(imc, nomePessoa, res);
 
 } 
