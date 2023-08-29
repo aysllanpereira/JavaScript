@@ -19,7 +19,7 @@ function calcular () {
     let desconto = parseFloat(document.getElementById("idesconto").value);
     let formaPagamento = document.getElementById("ipaga").value;
     let resultado = document.getElementById("res");
-
+ 
     let debito = "Debito";
     let dinheiroPix = "Dinheiro";
     let parceladoDuasx = "Parcelado 2x";
