@@ -35,11 +35,32 @@ class Pessoa {
       }
 
     }
-}
+    
 
-let jose = new Pessoa('Jose', 70, 1.75);
+} 
+
+function calcular() {
+
+  let nomeDaPessoa = document.getElementById('inome').value;
+  let pesoKg = parseFloat(document.getElementById('ipeso').value);
+  let alt = parseFloat(document.getElementById('ialt').value);
+  
+
+  let pessoa = new Pessoa(nomeDaPessoa, pesoKg, alt);
+  let imc = pessoa.calcularImc();
+  let classificacao = pessoa.classificarImc();
+
+  let verificar = document.getElementById('verificar');
+
+  verificar.innerHTML = `${nomeDaPessoa} o seu IMC é: ${imc.toFixed(2)} <br> Classificação: ${classificacao}`;
+  
+} 
+
+
+
+/* let jose = new Pessoa('Jose', 70, 1.75);
 let aysllan = new Pessoa('Aysllan', 83, 1.74);
 
 
 console.log(jose.classificarImc());
-console.log(aysllan.classificarImc());
+console.log(aysllan.classificarImc()); */
