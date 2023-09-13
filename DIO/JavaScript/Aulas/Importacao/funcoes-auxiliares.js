@@ -1,4 +1,4 @@
-let entradas = [5, 10, 30, 50, 90];
+let entradas = [10, 5, 30, 50, 58, 60, 39, 97, 8, 9];
 let i = 0;
 
 function gets() {

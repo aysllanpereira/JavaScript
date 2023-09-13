@@ -2,15 +2,26 @@
 
 let { gets, print } = require('../Importacao/funcoes-auxiliares');
 
-let numerosSorteados = [];
+ /* let numerosSorteados = []; */
 
-for(let i = 0; i< 5; i++) {
-    let numerosSorteado = gets();
-    numerosSorteados.push(numerosSorteado);
+/* ou para simplificar tudo, posso fazer dessa forma. Excluir a variavél numerosSorteados com o array e por a condição dentro do for, o resultado será o mesmo */
+/* essa linha deixa o código mais dinâmico, pois irá puxar a quantidade que for informada de alunos */
+const quantidadeDeAlunos = gets(); 
+let maiorValorEncontrado = 0;
+/* a variável "quantidadeDeAlunos" define a quantidade que for informada */
+
+for(let i = 0; i < quantidadeDeAlunos; i++) {
+    const numerosSorteado = gets();
+    if (numerosSorteado > maiorValorEncontrado) {
+        maiorValorEncontrado = numerosSorteado;
+    }
 }
 
-let maiorValor = 0;
+print(maiorValorEncontrado);
 
+/* posso fazer dessa forma abaixo para encontrar o maior valor */
+
+/*
 for (let i = 0; i < numerosSorteados.length; i++) {
     let numerosSorteado = numerosSorteados[i];
 
@@ -18,8 +29,8 @@ for (let i = 0; i < numerosSorteados.length; i++) {
         maiorValor = numerosSorteado;
     }
     
-}
+} */ 
 
-print(maiorValor);
+
 
 
