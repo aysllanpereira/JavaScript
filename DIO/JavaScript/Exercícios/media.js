@@ -1,4 +1,4 @@
-class Notas {
+/* class Notas {
     constructor(nome, nota1, nota2, nota3) {
         this.nome = nome;
         this.notas = [nota1, nota2, nota3];
@@ -34,4 +34,19 @@ function calcular() {
     let resultado = nota.calcularValorDaMedia();
 
     res.innerHTML = `${aluno} a sua primeira nota foi ${nota1}, a sua segunda nota foi ${nota2} e a terceira e ultima nota foi ${nota3}. A sua média final foi ${mediaDoAluno.toFixed(2)} ${resultado}!`;
-}
+} */ 
+
+const entradas = [5.5, 8, 2];
+let i = 0;
+
+function gets(){
+    const valor = entradas[i];
+    i++;
+    return valor;
+} 
+
+function print(texto){
+    console.log(texto);
+} 
+
+module.exports = {gets, print};
