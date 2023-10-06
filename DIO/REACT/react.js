@@ -11,7 +11,7 @@ const nota = 6;
     
     default:
         console.log(`Acima da média`);
-} */
+
 
 /* condição ternária */
-nota > 5 ? console.log(`Aprovrado`) : console.log(`Reprovado`);
+nota > 5 ? console.log(`Aprovado`) : console.log(`Reprovado`);
