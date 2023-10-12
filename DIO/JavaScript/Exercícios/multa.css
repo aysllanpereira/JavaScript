@@ -1,0 +1,34 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    background-color: black;
+}
+
+.cabecalho {
+    margin: auto;
+    margin-top: 12%;
+    border: 1px solid black;
+    width: 450px;
+    border-radius: 8px;
+    background-color: gainsboro;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.356);
+
+}
+
+h1 {
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.conteudo {
+    background-color: aliceblue;
+    width: 600px;
+    height: 500px;
+    margin: auto;
+    margin-top: 2%;
+}
