@@ -11,14 +11,15 @@
         <h1>CALCULO DE MULTA</h1>
     </header>
     <section class="conteudo">
-        <div>
+        <div class="contrato">
             <p>Contrato:
                 <label for="Contrato">
                     <input type="text" name="contrato" id="icontrato">
                 </label>  
             </p>
         </div>
-        <div>
+        <br>
+        <div class="valor">
             <p>Valor:
                 <label for="Valor">
                     <input type="number" name="Valor" id="ivalor">
@@ -30,6 +31,7 @@
                     <input type="date" name="data" id="idata">
                 </label>
             </p>
+            <br>
             <p>Prazo:
                 <label for="Prazo">
                     <input type="number" name="prazo" id="iprazo">
@@ -42,7 +44,7 @@
                 </label>
             </p>
         </div>
-        <div id="resultado">
+        <div id="resultado" class="result">
             <button onclick="calcular()">Calcular</button>
         </div>
 
