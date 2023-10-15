@@ -29,3 +29,6 @@ function calcular() {
    resultado.innerHTML = `O resultado é: ${dataQuitacao.format("DD/MM/YYYY")} e está a ${diferencaEmDias} dias em atraso e o valor é: ${final.toFixed()}`;
 
 }
+
+const mostrar = document.getElementById("resultado");
+mostrar.addEventListener("click", calcular);
