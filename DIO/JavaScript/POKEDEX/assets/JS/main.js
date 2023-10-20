@@ -1,44 +1,54 @@
+const pokemonList = document.getElementById("pokemonList")
+const loadMoreButton = document.getElementById("LoadMoreButton")
+
+const maxRecords = 150;
+const limit = 15;
+let offset = 0;
+
 function converterPokemonTypesToLi (pokemonTypes) {
     return pokemonTypes.map((typesSlot) => `<li class="type">${typesSlot.type.name}</li>`)
 }
 
-function converterPokemonToLi (pokemon) {
-    
-    return `
-            <li class="pokemon ${pokemon.type}">
-                <span class="number">#${pokemon.number}</span>
-                <span class="name">${pokemon.name}</span>
 
-                <div class="detail">
-                    <ol class="types">
-                        ${pokemon.types.map((type) => `<li class"type ${type}">${type}</li>`).join("")}
-                    </ol>
-                    <img src="${pokemon.photo}" alt="${pokemon.name}">
-                </div>
-            </li>
 
-    `
-}
+function buttonPokemonItens(offset, limit) {
+    Pokeapi.getPokemons(offset, limit).then((pokemons = []) => {
+        const newhtml = pokemons.map((pokemon) => `
+        <li class="pokemon ${pokemon.type}">
+            <span class="number">#${pokemon.number}</span>
+            <span class="name">${pokemon.name}</span>
 
-const pokemonList = document.getElementById("pokemonList");
+            <div class="detail">
+                <ol class="types">
+                    ${pokemon.types.map((type) => `<li class"type ${type}">${type}</li>`).join("")}
+                </ol>
+                <img src="${pokemon.photo}" alt="${pokemon.name}">
+            </div>
+        </li>
 
-    /* a função map irá fazer um mapeamento na lista html e a função join irá juntar a lista */
-
-    Pokeapi.getPokemons().then((pokemons = []) => {
-        pokemonList.innerHTML = pokemons.map(converterPokemonToLi).join('');
+`).join('')
+        pokemonList.innerHTML += newhtml
     })
-       /* const listItems = [];
 
-        for (let i = 0; i < pokemons.length; i++) {
-            const pokemon = pokemons[i];
-            listItems.push(converterPokemonToLi(pokemon))
-            
-        }
+}   
 
-        console.log(listItems);
-    }) */
+buttonPokemonItens(offset, limit)
+
+loadMoreButton.addEventListener("click", () => {
+    offset += limit
+
+    const qtRecordNewPage = offset + limit;
+
+    if(qtRecordNewPage >= maxRecords) {
+        const newLimit = maxRecords - offset;
+        buttonPokemonItens(offset, newLimit)
+
+        loadMoreButton.parentElement.removeChild(loadMoreButton)
+    } else {
+
+        buttonPokemonItens(offset, limit)
+
+    }
+
     
-       
-
-/* const x = 10 + 10;
-console.log(x); */
+})
