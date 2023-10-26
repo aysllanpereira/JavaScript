@@ -15,7 +15,7 @@ function repetirFruta() {
     var resultado = "";
 
     for (var i = 1; i <= num; i++) {
-        if(i % 2 === 1) {
+        if(i % 2 == 1) {
             resultado += fruta + "*";
         } else {
             resultado += fruta;
