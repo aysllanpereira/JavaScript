@@ -44,21 +44,39 @@ btListar.addEventListener("click", listarClubes);
 
 function mostrarTabela() {
 
-    if(vetor.length === 0) {
+    if(vetor.length === 0 || vetor.length % 2) {
         alert("Não há clubes na lista para exibir na tabela");
         return;
     }
 
     vetor.sort(function (a, b) {
-        return a.clube.localeCompare(b.clube);
+        return (a.clube, b.clube);
     });
 
-    var primeiroColocado = vetor[0].clube;
+    var tabela = "";
+    
+    for (var i = 0; i < vetor.length / 2; i++) {
+            var primeiro = vetor[i].clube;
+            var ultimo = vetor[vetor.length - 1 - i].clube;
+            var segundo = vetor[i + 1].clube;
+            var penultimo = vetor[vetor.length - 2 - i].clube;
+            
+            tabela += primeiro + " x " + ultimo + "\n";
+            tabela += segundo + " x " + penultimo + "\n";
+
+            i++;
+        }
+
+        
+
+    /* 
+    var primeiroColocado = vetor[1].clube;
     var ultimoColocado = vetor[vetor.length - 1].clube;
 
     var resultado = primeiroColocado + " x " + ultimoColocado;
-
-    document.getElementById('outExibir').textContent = resultado;
+    */
+    document.getElementById('outExibir').textContent = tabela;
+    
 }
 
 var btMostrar = document.getElementById('btMostrar');
