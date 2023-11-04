@@ -67,7 +67,7 @@ function mostrarTabela() {
             i++;
         }
 
-        
+    
 
     /* 
     var primeiroColocado = vetor[1].clube;
