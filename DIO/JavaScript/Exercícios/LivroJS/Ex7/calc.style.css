@@ -4,21 +4,27 @@
 }
 
 body {
-    background: rgb(81, 117, 141);
+    background: rgb(255, 255, 255);
     
 }
 
 h1 {
     background: rgba(245, 245, 245, 0.822);
     border: 1px solid black;
-    width: 350px;
+    width: 300px;
     margin: auto;
     margin-top: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 8px 8px 5px 2px rgba(0, 0, 0, 0.548);
+    box-shadow: 8px 8px 5px 2px rgba(0, 0, 0, 0.274);
+    transition: transform 0.3s;
 
+}
+
+h1:hover {
+    transform: scale(1.08);
+    cursor: pointer;
 }
 
 .calculator {
