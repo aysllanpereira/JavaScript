@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.863);
+    
+}
+
+.cabecalho {
+    color: darkgoldenrod;
+    margin-right: 80%;
+}
+
+.links {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+.cortes {
+    display: inline;
+    padding: 40px;
+    font-size: 1.1em;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contato {
+    display: inline;
+    padding: 40px;
+    font-size: 1.1em;
+}
+
+.redes {
+    display: inline;
+    padding: 40px;
+    font-size: 1.1em;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.imagem {
+    background-image: url(../imagens/header\ \(2\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 450px;
+}
+
+.imagem p {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.centro {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.barbershop {
+    margin-top: 30px;
+}
+
+.text {
+    margin-top: 30px;
+}
+
+.imagens-container {
+    column-count: 3;
+    column-gap: 5px;
+    margin-top: 30px;
+    
+
+
+}
+
+.servicos {
+    margin-top: 30px;
+}
+
+.servicos h2 {
+    text-align: center;
+}
+
+.cabelo {
+    
+}
+
+
