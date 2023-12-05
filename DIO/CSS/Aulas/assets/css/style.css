@@ -10,4 +10,18 @@ h1 {
 
 h2 {
     color: blue;
+
+    /* para transformar os caracteres em maiúsculuo, minúsculo.... */ 
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+p {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: aqua;
+    text-decoration-thickness: 3px;
+
+    /* define o recuo da primeira linha do texto */ 
+    text-indent: 10px;
 }
