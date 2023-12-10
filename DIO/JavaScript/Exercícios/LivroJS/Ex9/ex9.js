@@ -1,5 +1,6 @@
 const TAXA_MULTA = 2 / 100; 
 const TAXA_JUROS = 0.33 / 100;
+const valoresAnteriores = [];
 
 function calcularMultaJuros() {
     var inDataVenc = document.getElementById("inDataVenc");
@@ -43,6 +44,8 @@ function calcularMultaJuros() {
     outJuros.value = juros.toFixed(2);
     outTotal.value = total.toFixed(2);
 
+    valoresAnteriores.push(total);
+
 }
 
 var btCalcular = document.getElementById("btCalcular");
@@ -54,3 +57,16 @@ function limparCampos() {
 
 var btNovaConta = document.getElementById("btNovaConta");
 btNovaConta.addEventListener("click", limparCampos); 
+
+/* function mostrarValores() {
+    var exibir = "Valores informados anteriormente:\n";
+
+    for(var i = 0; i < valoresAnteriores.length; i++) {
+        exibir += valoresAnteriores[i] + "\n";
+    }
+    
+    
+}
+
+var btMostrar = document.getElementById("btMostrar");
+btCalcular.addEventListener("click", mostrarValores); */ 
