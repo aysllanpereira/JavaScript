@@ -38,7 +38,7 @@ Pokeapi.getPokemons = (offset = 0, limit = 20) => {
     
 }
 
-Promise.all([
+/* Promise.all([
     fetch('https://pokeapi.co/api/v2/pokemon/1'),
     fetch('https://pokeapi.co/api/v2/pokemon/2'),
     fetch('https://pokeapi.co/api/v2/pokemon/3'),
@@ -47,5 +47,5 @@ Promise.all([
 
 ]).then((results) => {
     console.log(results);
-})
+}) */
 

@@ -5,34 +5,41 @@ const maxRecords = 150;
 const limit = 15;
 let offset = 0;
 
-function converterPokemonTypesToLi (pokemonTypes) {
+/* function converterPokemonTypesToLi (pokemonTypes) {
     return pokemonTypes.map((typesSlot) => `<li class="type">${typesSlot.type.name}</li>`)
-}
+} */
 
 
 
-function buttonPokemonItens(offset, limit) {
-    Pokeapi.getPokemons(offset, limit).then((pokemons = []) => {
-        const newhtml = pokemons.map((pokemon) => `
+function converterPokemonToLi(pokemon) {
+    return `
         <li class="pokemon ${pokemon.type}">
             <span class="number">#${pokemon.number}</span>
             <span class="name">${pokemon.name}</span>
 
             <div class="detail">
                 <ol class="types">
-                    ${pokemon.types.map((type) => `<li class"type ${type}">${type}</li>`).join("")}
+                    ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
                 </ol>
-                <img src="${pokemon.photo}" alt="${pokemon.name}">
+
+                <img src="${pokemon.photo}"
+                    alt="${pokemon.name}">
             </div>
         </li>
+    
+    `
+} 
 
-`).join('')
-        pokemonList.innerHTML += newhtml
+function loadPokemnonItens(offset, limit) {
+    Pokeapi.getPokemons(offset, limit).then((pokemons = []) => {
+        const newHtml = pokemons.map(converterPokemonToLi).join("")
+        pokemonList.innerHTML += newHtml
     })
+}
 
-}   
+// buttonPokemonItens(offset, limit)
 
-buttonPokemonItens(offset, limit)
+loadPokemnonItens(offset, limit)
 
 loadMoreButton.addEventListener("click", () => {
     offset += limit
